@@ -11,7 +11,7 @@ This plugin refers to the iOS 13 SDK and is at this point not for production use
 
 Add the plugin with the following command:
 
-`cordova plugin add cordova-sumup-theme-detection`
+`cordova plugin add cordova-plugin-theme-detection`
 
 ## Usage
 

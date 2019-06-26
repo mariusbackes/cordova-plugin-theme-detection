@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-theme-detection"
+        version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>ThemeDetection</name>
+    <author>Marius Backes</author>
+    <description>
+        Cordova plugin to detect the choosen theme (light or dark) on the device
+    </description>
+    <license>MIT</license>
+    <repo>https://github.com/mariusbackes/cordova-plugin-theme-detection.git</repo>
+    <issue>https://github.com/mariusbackes/cordova-plugin-theme-detection/issues</issue>
+    <keywords>
+        theme, detection, dark, light, mode
+    </keywords>
+
+    <js-module name="ThemeDetection" src="www/ThemeDetection.js">
+        <clobbers target="cordova.plugins.ThemeDetection" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="ThemeDetection">
+                <param name="ios-package" value="ThemeDetection" />
+            </feature>
+        </config-file>
+        <dependency id="cordova-plugin-add-swift-support" version="2.0.2"/>
+        <source-file src="src/ios/ThemeDetection.swift" />
+    </platform>
+</plugin>
