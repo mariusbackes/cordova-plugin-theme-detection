@@ -1,6 +1,6 @@
 {
   "name": "cordova-plugin-theme-detection",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cordova Plugin to detect whether dark mode or light mode is detected on your device",
   "cordova": {
     "id": "cordova-plugin-theme-detection",

@@ -58,4 +58,5 @@ ThemeDetectionResponse {
 
 ## Changelog
 
+- 1.0.1: iOS Version Info if Plugin is not available.
 - 1.0.0: Initial version support for iOS.
