@@ -29,7 +29,7 @@ cordova.plugins.ThemeDetection.methodName(
 
 #### Ionic Native
 
-If you are using Ionic , use the Ionic Native Wrapper. Install it with `npm install @ionic-native/theme-detection`.
+If you are using Ionic, use the Ionic Native Wrapper. Install it with `npm install @ionic-native/theme-detection`.
 
 Import the plugin in your app.module:
 ```ts
@@ -58,7 +58,7 @@ export class HomePage {
     
   private async isAvailable(): Promise<ThemeDetectionResponse> {
     try {
-      let dark_mode_available: boolean = await this.themeDetection.isAvailable(this.access_token);
+      let dark_mode_available: boolean = await this.themeDetection.isAvailable();
     } catch (e) {
       console.log(e);
     }
@@ -66,7 +66,7 @@ export class HomePage {
   
   private async isDarkModeEnabled(): Promise<ThemeDetectionResponse> {
     try {
-      let dark_mode_enabled: boolean = await this.themeDetection.isDarkModeEnabled(this.access_token);
+      let dark_mode_enabled: boolean = await this.themeDetection.isDarkModeEnabled();
     } catch (e) {
       console.log(e);
     }
@@ -101,6 +101,6 @@ ThemeDetectionResponse {
 
 ## Changelog
 
-- 1.0.2: Update README.md for Ionic Native Wrapper support.
+- 1.0.3: Update README.md for Ionic Native Wrapper support.
 - 1.0.1: iOS Version Info if Plugin is not available.
 - 1.0.0: Initial version support for iOS.
