@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="cordova-plugin-theme-detection"
-        version="1.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+        version="1.0.2" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>ThemeDetection</name>
     <author>Marius Backes</author>
     <description>
@@ -25,5 +25,16 @@
         </config-file>
         <dependency id="cordova-plugin-add-swift-support" version="2.0.2"/>
         <source-file src="src/ios/ThemeDetection.swift" />
+    </platform>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="ThemeDetection">
+                <param name="android-package" value="de.mariusbackes.cordova.plugin.ThemeDetection"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/ThemeDetection.java" target-dir="src/de/mariusbackes/cordova/plugin" />
     </platform>
 </plugin>
