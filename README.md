@@ -7,6 +7,8 @@ This plugin detects whether the dark mode is enabled on the device or not.
 **Attention**: Dark mode was introduced in iOS 13, which is still in beta.
 This plugin refers to the iOS 13 SDK and is at this point not for production use.
 
+For Android you can use it since Android 9 (Pie).
+
 ## Installation
 
 Add the plugin with the following command:
@@ -80,7 +82,7 @@ export class HomePage {
 
 `cordova.plugins.ThemeDetection.isAvailable()`
 
-Checks whether the device is running on iOS 13 or newer and returns an object with a boolean value and a message.
+Checks whether the device is running on iOS 13 or Android 9 or newer and returns an object with a boolean value and a message.
 
 #### isDarkModeEnabled
 
@@ -101,6 +103,7 @@ ThemeDetectionResponse {
 
 ## Changelog
 
+- 1.1.0: Addded Android support
 - 1.0.3: Update README.md for Ionic Native Wrapper support.
 - 1.0.1: iOS Version Info if Plugin is not available.
 - 1.0.0: Initial version support for iOS.
