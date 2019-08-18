@@ -103,6 +103,7 @@ ThemeDetectionResponse {
 
 ## Changelog
 
+- 1.1.1: Updated documentation for Android
 - 1.1.0: Addded Android support
 - 1.0.3: Update README.md for Ionic Native Wrapper support.
 - 1.0.1: iOS Version Info if Plugin is not available.

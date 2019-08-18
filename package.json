@@ -1,17 +1,31 @@
 {
   "name": "cordova-plugin-theme-detection",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Cordova Plugin to detect whether dark mode or light mode is detected on your device",
+  "author": "Marius Backes",
+  "license": "MIT",
+  "homepage": "https://github.com/mariusbackes/cordova-plugin-theme-detection",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mariusbackes/cordova-plugin-theme-detection.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mariusbackes/cordova-plugin-theme-detection.git/issues"
+  },
   "cordova": {
     "id": "cordova-plugin-theme-detection",
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ]
   },
   "keywords": [
-    "ecosystem:cordova",
-    "cordova-ios"
-  ],
-  "author": "Marius Backes",
-  "license": "ISC"
+    "dark-theme",
+    "dark-mode",
+    "light-theme",
+    "light-mode",
+    "design",
+    "theme",
+    "detection"
+  ]
 }
