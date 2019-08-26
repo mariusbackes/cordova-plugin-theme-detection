@@ -60,7 +60,8 @@ export class HomePage {
     
   private async isAvailable(): Promise<ThemeDetectionResponse> {
     try {
-      let dark_mode_available: boolean = await this.themeDetection.isAvailable();
+      let dark_mode_available: ThemeDetectionResponse = 
+        await this.themeDetection.isAvailable();
     } catch (e) {
       console.log(e);
     }
@@ -68,7 +69,8 @@ export class HomePage {
   
   private async isDarkModeEnabled(): Promise<ThemeDetectionResponse> {
     try {
-      let dark_mode_enabled: boolean = await this.themeDetection.isDarkModeEnabled();
+      let dark_mode_enabled: ThemeDetectionResponse = 
+        await this.themeDetection.isDarkModeEnabled();
     } catch (e) {
       console.log(e);
     }
@@ -103,6 +105,7 @@ ThemeDetectionResponse {
 
 ## Changelog
 
+- 1.1.2: Fix in documentation
 - 1.1.1: Updated documentation for Android
 - 1.1.0: Addded Android support
 - 1.0.3: Update README.md for Ionic Native Wrapper support.
