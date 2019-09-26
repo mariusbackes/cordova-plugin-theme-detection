@@ -4,9 +4,7 @@
 
 This plugin detects whether the dark mode is enabled on the device or not.
 
-**Attention**: Dark mode was introduced in iOS 13, which is still in beta.
-This plugin refers to the iOS 13 SDK and is at this point not for production use.
-
+iOS 13 must be installed on your device, to use this plugin.
 For Android you can use it since Android 9 (Pie).
 
 ## Installation
@@ -34,6 +32,7 @@ cordova.plugins.ThemeDetection.methodName(
 If you are using Ionic, use the Ionic Native Wrapper. Install it with `npm install @ionic-native/theme-detection`.
 
 Import the plugin in your app.module:
+
 ```ts
  @NgModule({
   declarations: [AppComponent],
@@ -48,29 +47,28 @@ Import the plugin in your app.module:
 ```
 
 And import and use it in every of your components:
+
 ```ts
-import { ThemeDetection } from '@ionic-native/theme-detection/ngx';
+import { ThemeDetection } from "@ionic-native/theme-detection/ngx";
 
 @Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html'
+  selector: "app-home",
+  templateUrl: "home.page.html"
 })
 export class HomePage {
   constructor(private themeDetection: ThemeDetection) {}
-    
+
   private async isAvailable(): Promise<ThemeDetectionResponse> {
     try {
-      let dark_mode_available: ThemeDetectionResponse = 
-        await this.themeDetection.isAvailable();
+      let dark_mode_available: ThemeDetectionResponse = await this.themeDetection.isAvailable();
     } catch (e) {
       console.log(e);
     }
   }
-  
+
   private async isDarkModeEnabled(): Promise<ThemeDetectionResponse> {
     try {
-      let dark_mode_enabled: ThemeDetectionResponse = 
-        await this.themeDetection.isDarkModeEnabled();
+      let dark_mode_enabled: ThemeDetectionResponse = await this.themeDetection.isDarkModeEnabled();
     } catch (e) {
       console.log(e);
     }
@@ -105,6 +103,7 @@ ThemeDetectionResponse {
 
 ## Changelog
 
+- 1.1.3: Updated from beta
 - 1.1.2: Fix in documentation
 - 1.1.1: Updated documentation for Android
 - 1.1.0: Addded Android support
