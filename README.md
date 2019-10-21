@@ -103,6 +103,7 @@ ThemeDetectionResponse {
 
 ## Changelog
 
+- 1.2.0: Bugfix for Android 10
 - 1.1.3: Updated from beta
 - 1.1.2: Fix in documentation
 - 1.1.1: Updated documentation for Android
