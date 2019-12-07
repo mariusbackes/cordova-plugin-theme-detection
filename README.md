@@ -101,6 +101,20 @@ ThemeDetectionResponse {
 }
 ```
 
+## Common issues
+
+### UIUserInterfaceStyle
+
+If you have set the following Property in your `config.xml` file, the plugin will always return false:
+
+```xml
+<config-file parent="UIUserInterfaceStyle" platform="ios" target="*-Info.plist">
+  <string>Light</string>
+</config-file>
+```
+
+Please remove this property from `config.xml`.
+
 ## Changelog
 
 - 1.2.0: Bugfix for Android 10
