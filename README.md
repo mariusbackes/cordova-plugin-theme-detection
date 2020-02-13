@@ -1,5 +1,12 @@
 # Cordova plugin for theme detection
 
+## Donation
+
+If you like this plugin feel free to by me a beer :beers:. So I can maintain this and other plugins and projects.
+
+[![https://www.paypal.me/mariusb73/5](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://www.paypal.me/mariusb73/5)
+
+
 ## Description
 
 This plugin detects whether the dark mode is enabled on the device or not.
@@ -117,6 +124,7 @@ Please remove this property from `config.xml`.
 
 ## Changelog
 
+- 1.2.1: Updated README
 - 1.2.0: Bugfix for Android 10
 - 1.1.3: Updated from beta
 - 1.1.2: Fix in documentation
