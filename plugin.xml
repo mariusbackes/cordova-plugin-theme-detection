@@ -37,4 +37,16 @@
         </config-file>
         <source-file src="src/android/ThemeDetection.java" target-dir="src/de/mariusbackes/cordova/plugin" />
     </platform>
+
+    <!-- browser -->    
+    <platform name="browser">
+        <config-file parent="/*" target="config.xml">
+            <feature name="ThemeDetection">
+                <param name="browser-package" value="ThemeDetection" />
+            </feature>
+        </config-file>
+        <js-module src="src/browser/ThemeDetectionProxy.js" name="ThemeDetectionProxy">
+            <runs />
+        </js-module>
+    </platform>
 </plugin>
