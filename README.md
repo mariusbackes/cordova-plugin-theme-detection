@@ -11,8 +11,8 @@ If you like this plugin feel free to by me a beer :beers:. So I can maintain thi
 
 This plugin detects whether the dark mode is enabled on the device or not.
 
-iOS 13 must be installed on your device, to use this plugin.
-For Android you can use it since Android 9 (Pie).
+iOS 13+ must be installed on your device, to use this plugin.
+For Android you can use it since Android 9 (Pie). The Browser platform requires `window.matchMedia()` support.
 
 ## Installation
 
@@ -124,6 +124,7 @@ Please remove this property from `config.xml`.
 
 ## Changelog
 
+- 1.3.0: Add browser platform support
 - 1.2.1: Updated README
 - 1.2.0: Bugfix for Android 10
 - 1.1.3: Updated from beta
