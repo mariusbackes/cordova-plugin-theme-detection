@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin id="cordova-plugin-theme-detection"
-        version="1.2.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+        version="1.3.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>ThemeDetection</name>
     <author>Marius Backes</author>
     <description>
@@ -36,5 +36,17 @@
             </feature>
         </config-file>
         <source-file src="src/android/ThemeDetection.java" target-dir="src/de/mariusbackes/cordova/plugin" />
+    </platform>
+
+    <!-- browser -->    
+    <platform name="browser">
+        <config-file parent="/*" target="config.xml">
+            <feature name="ThemeDetection">
+                <param name="browser-package" value="ThemeDetection" />
+            </feature>
+        </config-file>
+        <js-module src="src/browser/ThemeDetectionProxy.js" name="ThemeDetectionProxy">
+            <runs />
+        </js-module>
     </platform>
 </plugin>
