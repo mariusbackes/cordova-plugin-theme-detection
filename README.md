@@ -1,3 +1,5 @@
+![npm](https://img.shields.io/npm/dm/cordova-plugin-theme-detection) ![npm](https://img.shields.io/npm/v/cordova-plugin-theme-detection) ![NPM](https://img.shields.io/npm/l/cordova-plugin-theme-detection)
+
 # Cordova plugin for theme detection
 
 ## Donation
